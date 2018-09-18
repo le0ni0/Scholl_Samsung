@@ -41,6 +41,6 @@ public class DZ_ONE {
         }
     }
 }
-///    double src = 123.45;
+//    double src = 123.45;
   //  int res = (int)src; //целая часть
   //  double res2 = src - res;
