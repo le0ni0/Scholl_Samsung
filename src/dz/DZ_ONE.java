@@ -33,8 +33,25 @@ public class DZ_ONE {
                 d=d+"1";
                 cel = (cel - 1) / 2;
             }
+        } System.out.println(d);
+        int bol=1;
+        while(bol<=drop){
+            bol=bol*10;
         }
-
+        System.out.println(bol);
+        String p="";
+        while(!(drop==0)){
+            if(drop*2<bol){
+                drop=drop*2;
+                p=p+"0";
+                System.out.println(drop);
+            }else{
+                drop=drop*2-bol;
+                p=p+"1";
+                System.out.println(drop);
+            }
+        }
+        System.out.println(p);
         char [] mas=d.toCharArray();
         for(int i=mas.length-1;i>=0;i--){
             System.out.print(mas[i]);
