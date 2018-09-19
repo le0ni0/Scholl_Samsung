@@ -30,7 +30,6 @@ public class DZ_ONE {
         }else{
             System.out.println(ANSI_RED+"INT"+ANSI_RESET);
         }
-
         int s=0;
         char [] st=chi.toCharArray();
         for(int i=0;i<st.length;i++){
@@ -45,7 +44,7 @@ public class DZ_ONE {
         }
     }
     public static void cell(){
-        int cel=Integer.parseInt(String.valueOf(chi));
+        long cel=Long.parseLong(String.valueOf(chi));
         String d="";
         while(!(cel==0)){
             if(cel%2==0){
@@ -63,20 +62,18 @@ public class DZ_ONE {
     }
     public static void dropn(){
         char [] st=chi.toCharArray();
-        int cel=0;
+        long cel=0;
         int i2=0;
-        int q=10;
-        int drop=0;
+        long drop=0;
         while(!(st[i2]=='.')){
             int x=Integer.parseInt(String.valueOf(st[i2]));
-            cel=(cel*q)+x;
+            cel=(cel*10)+x;
             st[i2]=0;
             i2++;
         }
-        q=10;
         for(int i=i2+1;i<st.length;i++){
             int x=Integer.parseInt(String.valueOf(st[i]));
-            drop=(drop*q)+x;
+            drop=(drop*10)+x;
         }
         String d="";
         while(!(cel==0)){
@@ -88,7 +85,7 @@ public class DZ_ONE {
                 cel = (cel - 1) / 2;
             }
         }
-        int bol=1;
+        long bol=1;
         while(bol<=drop){
             bol=bol*10;
         }
