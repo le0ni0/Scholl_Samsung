@@ -33,7 +33,7 @@ public class DZ_TWO {
         sc.nextLine();
         int ch4t1=0;
         int ch4t2=0;
-        while (theend.equals("Да")|theend.equals("да")|theend.equals("Yes")|theend.equals("yes")){
+        while (theend.equals("Да")|theend.equals("да")|theend.equals("Yes")|theend.equals("ye")){
             vivod();
             int pr=0;
             for(int i=glavPlayer;i<n*n+glavPlayer;i++) {
