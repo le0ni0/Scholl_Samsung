@@ -18,7 +18,7 @@ public class DZ_ONE {
         if (cel>=-128&&cel<=127){
             System.out.println(ANSI_YELLOW+"BYTE"+ANSI_RESET);
         }else{
-            System.out.println(ANSI_RED+"BYTE"+ANSI_RESET);
+            System.out.println(ANSI_RED+ "BYTE" +ANSI_RESET);
         }
         if (cel>=-32768&&cel<=32767){
             System.out.println(ANSI_YELLOW+"SHORT"+ANSI_RESET);
@@ -44,7 +44,12 @@ public class DZ_ONE {
         }
     }
     public static void cell(){
+        int t=1;
         long cel=Long.parseLong(String.valueOf(chi));
+        if (cel<0){
+           t=t*(-1);
+           cel=cel*(-1);
+        }
         String d="";
         while(!(cel==0)){
             if(cel%2==0){
