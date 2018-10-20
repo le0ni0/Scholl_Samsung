@@ -29,10 +29,10 @@ public class DZ_TWO {
             System.out.println(player1+" тебе сегодня везёт.");
         }
         Thread.sleep(1000);
-        vivod();
         String theend="Да";
         sc.nextLine();
         while (theend.equals("Да")|theend.equals("да")){
+            vivod();
             int pr=0;
             for(int i=glavPlayer;i<n*n+glavPlayer;i++) {
                 if(i%2==0){
