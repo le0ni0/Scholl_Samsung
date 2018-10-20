@@ -31,6 +31,8 @@ public class DZ_TWO {
         Thread.sleep(1000);
         String theend="Да";
         sc.nextLine();
+        int ch4t1=0;
+        int ch4t2=0;
         while (theend.equals("Да")|theend.equals("да")){
             vivod();
             int pr=0;
@@ -38,6 +40,10 @@ public class DZ_TWO {
                 if(i%2==0){
                     if (proverka(i-1)==1){
                         System.out.println("Выйграл "+player2);
+                        System.out.print("Счёт: ");
+                        ch4t1++;
+                        System.out.print(ch4t1+":"+ch4t2);
+                        System.out.println();
                         pr++;
                         break;
                     }else {
@@ -48,6 +54,10 @@ public class DZ_TWO {
                 }else {
                     if (proverka(i-1)==1){
                         System.out.println("Выйграл "+player1);
+                        System.out.print("Счёт: ");
+                        ch4t2++;
+                        System.out.print(ch4t1+":"+ch4t2);
+                        System.out.println();
                         pr++;
                         break;
                     }else {
